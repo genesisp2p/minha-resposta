@@ -36,7 +36,7 @@ public class Pratica31 {
         dias = dias / (24 * 60 * 60 * 1000);
         System.out.println(Math.round(dias));
         Fim = new Date();
-        long ms = fim.getTime() - inicio.getTime();
+        long ms = Fim.getTime() - Inicio.getTime();
         System.out.println(ms);
         
     }
