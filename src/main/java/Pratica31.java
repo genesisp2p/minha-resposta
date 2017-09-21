@@ -25,7 +25,11 @@ public class Pratica31 {
        meuNome = "Gabriel Dias de Camargo";
        
         System.out.println(meuNome.toUpperCase());
-        System.out.println(Character.toUpperCase(meuNome.charAt(16)) + meuNome.substring(17) + "," + Character.toUpperCase(meuNome.charAt(0)) + "." + Character.toUpperCase(meuNome.charAt(8)));
+        char primeiro = meuNome.charAt(0);
+        char segundo = meuNome.charAt(8);
+        String Ultimo = Character.toUpperCase(meuNome.charAt(16)) + meuNome.substring(17).toLowerCase();
+
+        System.out.println(Ultimo + "," + Character.toUpperCase(primeiro) + "." + Character.toUpperCase(segundo));
         dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);
         GregorianCalendar hoje = new GregorianCalendar();
         double dias = hoje.getTimeInMillis() - dataNascimento.getTimeInMillis();
