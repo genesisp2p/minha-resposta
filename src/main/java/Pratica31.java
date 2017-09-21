@@ -14,7 +14,7 @@ import java.util.GregorianCalendar;
  * @author diasc
  */
 public class Pratica31 {
-    private static String meuNome =  "Gabriel Dias de Camargo";
+    private static String meuNome =  "Gabriel Dias Camargo";
     private static Date Inicio;
     private static Date Fim;
     private static GregorianCalendar dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);;
@@ -25,7 +25,7 @@ public class Pratica31 {
         System.out.println(meuNome.toUpperCase());
         char primeiro = Character.toUpperCase(meuNome.charAt(0));
         char segundo = Character.toUpperCase (meuNome.charAt(8));
-        String Ultimo = Character.toUpperCase(meuNome.charAt(16)) + meuNome.substring(17).toLowerCase();
+        String Ultimo = Character.toUpperCase(meuNome.charAt(13)) + meuNome.substring(14).toLowerCase();
 
         System.out.println(Ultimo + "," + primeiro + "." + segundo);
         GregorianCalendar hoje = new GregorianCalendar();
