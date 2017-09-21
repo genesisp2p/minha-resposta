@@ -17,19 +17,16 @@ public class Pratica31 {
     private static String meuNome;
     private static Date inicio;
     private static Date fim;
+    private static GregorianCalendar dataNascimento;
     
    public static void main(String[] args) {
 
-        inicio = new Date();
-        meuNome = "Gabriel Dias de Camargo";
+       inicio = new Date();
+       meuNome = "Gabriel Dias de Camargo";
        
         System.out.println(meuNome.toUpperCase());
-        char primeiro = meuNome.charAt(0);
-        char segundo = meuNome.charAt(8);
-        String Ultimo = meuNome.substring(17);
-        Ultimo = meuNome.charAt(16)+Ultimo;
-        System.out.println(Ultimo + "," + Character.toUpperCase(primeiro) + "." + Character.toUpperCase(segundo));
-        GregorianCalendar dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);
+        System.out.println(Character.toUpperCase(meuNome.charAt(16)) + meuNome.substring(17) + "," + Character.toUpperCase(meuNome.charAt(0)) + "." + Character.toUpperCase(meuNome.charAt(8)));
+        dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);
         GregorianCalendar hoje = new GregorianCalendar();
         double dias = hoje.getTimeInMillis() - dataNascimento.getTimeInMillis();
         dias = dias / (24 * 60 * 60 * 1000);
