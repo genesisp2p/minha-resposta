@@ -14,23 +14,20 @@ import java.util.GregorianCalendar;
  * @author diasc
  */
 public class Pratica31 {
-    private static String meuNome;
+    private static String meuNome =  "Gabriel Dias de Camargo";
     private static Date Inicio;
     private static Date Fim;
-    private static GregorianCalendar dataNascimento;
+    private static GregorianCalendar dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);;
     
    public static void main(String[] args) {
 
-       Inicio = new Date();
-       meuNome = "Gabriel Dias de Camargo";
-       
+       Inicio = new Date();  
         System.out.println(meuNome.toUpperCase());
         char primeiro = meuNome.charAt(0);
         char segundo = meuNome.charAt(8);
         String Ultimo = Character.toUpperCase(meuNome.charAt(16)) + meuNome.substring(17).toLowerCase();
 
         System.out.println(Ultimo + "," + Character.toUpperCase(primeiro) + "." + Character.toUpperCase(segundo));
-        dataNascimento = new GregorianCalendar(1994, Calendar.MAY, 10);
         GregorianCalendar hoje = new GregorianCalendar();
         double dias = hoje.getTimeInMillis() - dataNascimento.getTimeInMillis();
         dias = dias / (24 * 60 * 60 * 1000);
